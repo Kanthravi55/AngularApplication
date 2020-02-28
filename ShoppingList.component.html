@@ -1,0 +1,17 @@
+<h4><b>Shopping List</b></h4>
+<hr>
+<div class="row">
+  <div class="col-xm-12">
+    <app-shopping-edit (onClickShoppingList)="ShopingListadd($event)"></app-shopping-edit>
+    <!--(ingredientAdded)="ingAdded($event)" method removed because of shoppinglist services used-->
+  </div>
+  <hr />
+  <a href="#" class="list-group-item" style="cursor:pointer" *ngFor="let ingredient of ingredients">
+    <ul class="list-group">
+
+      {{ingredient.name}}   ({{ingredient.amount}})
+  
+  </ul>
+    </a>
+</div>
+

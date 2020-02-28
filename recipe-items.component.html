@@ -1,0 +1,15 @@
+<a class="list-group-item clearfix" (click)="onSelectItem()">
+  <div class="pull-left">
+    <div class="pull-left">
+      <h4 class="list-group-item-heading">{{recipe.name}}</h4>
+      </div>
+    <div class="row">
+      <div class="pull-left">
+         <p class="list-group-item-text">{{recipe.description}}</p>
+      </div>
+    </div>
+  </div>
+  <span class="pull-right">
+    <img src="{{recipe.imagepath}}" alt="{{recipe.name}}" class="img-responsive" style="max-height:50px;" />
+  </span>
+</a>

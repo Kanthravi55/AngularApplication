@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+  <div style="text-align:center">
+    <h1 [ngStyle]="{'background-color' : 'orange'}">
+      {{ title }}
+    </h1>
+    <app-header>  </app-header> <!--adding router outlet   removed   (featureSelected)="onNavigate($event)"-->
+
+    <img width="100" alt="" src="data:" />
+    <router-outlet></router-outlet>
+    <div class="col-md-5">
+      <!----app-shopping-list *ngIf="loadedFeature !== 'recipe'"></!--app-shopping-list-->
+    </div>
+    <div class="col-xs-28">
+      <!--app-recipe-book *ngIf="loadedFeature === 'recipe'"></!--app-recipe-book-->
+    </div>
+  </div>
+
+
+

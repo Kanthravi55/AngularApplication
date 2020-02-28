@@ -1,0 +1,14 @@
+<h4>Recipe Book</h4>
+<hr>
+<div class="col-xs-3">
+  <app-recipe-list (SelectedRecipe)="SelectedItem = $event"></app-recipe-list>
+  <!----(SelectedRecipe)="SelectedItem = $event"  inside <app-recipe-list> is removed-->
+</div>
+
+<div class="col-xs-8">
+  <app-recipe-details *ngIf="SelectedItem ; else infoText" [recipe]="SelectedItem"></app-recipe-details>
+    <!--[recipe]="SelectedItem"-->
+    <ng-template #infoText><p>Please select a Recipe</p></ng-template>
+  
+</div>
+
